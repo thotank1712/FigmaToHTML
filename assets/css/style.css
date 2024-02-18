@@ -77,6 +77,7 @@ a {
 /* ================ header ================= */
 .header {
   background: pink;
+  background: #fffcf4;
 }
 
 .header.fixed {
@@ -137,6 +138,7 @@ header .btn-sign-up {
 /* ========== hero ========== */
 .hero {
   padding: 56px 0 65px;
+  background: #fffcf4;
 }
 
 .hero .body {
@@ -694,7 +696,7 @@ nay có 770 nên 770/1170 *100 ra 66% */
 
 .blogs .item .btn:hover {
   background: var(--primary-color);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .blogs .dots {
