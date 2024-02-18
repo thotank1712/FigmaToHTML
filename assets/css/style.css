@@ -526,3 +526,55 @@ nay có 770 nên 770/1170 *100 ra 66% */
   line-height: 1.54;
   color: #ffffff;
 }
+
+/* ================== features =================== */
+
+/* đo được cách khối trên 200, 65 thì dùng padding
+để ko bị sát khi sửa */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+  /* background: blue; */
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 8px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+
+.features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background-color: var(--primary-color);
+}
