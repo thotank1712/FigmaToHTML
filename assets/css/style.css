@@ -527,7 +527,7 @@ nay có 770 nên 770/1170 *100 ra 66% */
   color: #ffffff;
 }
 
-/* ================== features =================== */
+/* ================== features 1 =================== */
 
 /* đo được cách khối trên 200, 65 thì dùng padding
 để ko bị sát khi sửa */
@@ -577,4 +577,23 @@ nay có 770 nên 770/1170 *100 ra 66% */
   width: 137px;
   height: 50px;
   background-color: var(--primary-color);
+}
+
+/* ================== features 2 =================== */
+.features-2nd {
+  margin-top: 70px;
+}
+
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+  width: 48.7%;
+}
+
+.features-2nd .images img {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
 }
