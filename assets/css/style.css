@@ -597,3 +597,98 @@ nay có 770 nên 770/1170 *100 ra 66% */
   height: 440px;
   border-radius: 20px;
 }
+
+/* ================== blogs =================== */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  margin: 16px auto 0;
+  width: 448px;
+  font-size: 1.6rem;
+  line-height: 1.75x;
+  color: #696262;
+}
+
+.blogs .blog-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.blogs .item {
+  width: 33.33%;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.blogs .item:hover {
+  box-shadow: 0px 16px 32px 0px #0000000d;
+}
+
+.blogs .item .thump {
+  width: 100%;
+  height: 250px;
+  border-radius: 16px 16px 0px 0px;
+  object-fit: cover;
+}
+
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .item .date {
+  position: relative;
+  padding-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.blogs .item .date::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.blogs .item .date::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: -27px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blogs .item .title {
+  margin-top: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #171100;
+}
+
+.blogs .item .btn {
+  margin-top: 12px;
+}
+
+.blogs .item .btn:hover {
+  background: var(--primary-color);
+  cursor: pointer;
+}
