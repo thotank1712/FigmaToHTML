@@ -618,6 +618,7 @@ nay có 770 nên 770/1170 *100 ra 66% */
 }
 
 .blogs .blog-list {
+  overflow: hidden;
   margin-top: 55px;
   display: flex;
   gap: 30px;
@@ -627,6 +628,8 @@ nay có 770 nên 770/1170 *100 ra 66% */
   width: 33.33%;
   background: #ffffff;
   border-radius: 16px;
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
 }
 
 .blogs .item:hover {
@@ -686,9 +689,30 @@ nay có 770 nên 770/1170 *100 ra 66% */
 
 .blogs .item .btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blogs .item .btn:hover {
   background: var(--primary-color);
   cursor: pointer;
+}
+
+.blogs .dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 6px;
+}
+
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  background: #5f5b53;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  background: var(--primary-color);
+  cursor: default;
 }
