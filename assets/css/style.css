@@ -57,6 +57,23 @@ a {
   cursor: pointer;
 }
 
+/* quá 1 dòng hiển thi dấu 3 chấm */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* quá 2 dòng hiển thì dấu 3 chấm */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+/* xuống dòng dù chữ hay đường link có dài tới đâu */
+.break-all {
+  word-break: break-all;
+}
 /* ================ header ================= */
 .header {
   background: pink;
@@ -338,6 +355,7 @@ header .btn-sign-up {
 }
 
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
