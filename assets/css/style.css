@@ -455,8 +455,20 @@ nên giờ đo dc 200px thì phair trừ ra còn 135px */
   background-color: #2e2100;
 }
 
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  /* 2 thuộc tính này sẽ code trên f12 web để thử
+  sau này thì mới áp dụng js, hiện tại dùng thẳng
+  nên -100 sẽ đưa ra người 2, -200 thì hiện người 3 */
+  transform: translateX(-100%);
+  transition: all ease 0.5s;
 }
 
 .feedback-item .avatar {
