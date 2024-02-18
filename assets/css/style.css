@@ -444,3 +444,73 @@ header .btn-sign-up {
 .popular .course-item .btn-book:hover {
   background: var(--primary-color);
 }
+
+/* ================================ .feedback ================================= */
+/* để tránh trường hợp thêm nền vào thì bị sát cái
+chữ nên đã để ở populor trên dưới padding 65px,
+nên giờ đo dc 200px thì phair trừ ra còn 135px */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background-color: #2e2100;
+}
+
+.feedback-item {
+  display: flex;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info .member-mane {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+  color: #f7f7f7;
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.feedback-item .dots {
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+
+/* 66% vì phần .main-content 1170 mà content
+nay có 770 nên 770/1170 *100 ra 66% */
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+  color: #ffffff;
+}
